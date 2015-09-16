@@ -20,7 +20,7 @@ class Foo {
     }
     
 //: [EXPLAIN YOUR ANSWER TO Q1 HERE]
-    
+    // has no effect because it already checks if valid string in words
 
     
 //: ## Q2: Variable Types and Function Types
@@ -40,7 +40,7 @@ class Foo {
     }
     
 //: [EXPLAIN YOUR ANSWER TO Q2 HERE]
-    
+    // i not mutable with let 
     
     
 //: ## Q3: More functions, and object initialization
@@ -87,7 +87,7 @@ class Foo {
 
 //: [EXPLAIN YOUR ANSWER TO Q3 HERE]
 
-
+// replace let with var so mutable. Don't use letter in count laters. not instantiating dictionary correctly: should be count letters = [Character: Int]()
 //: **Do not** change anything below.
 //: You should be able to call the methods as is.
 Foo.isAnagram("anagram", wordB: "managra")
