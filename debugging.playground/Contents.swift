@@ -47,9 +47,9 @@ class Foo {
 //: The method should be returning true or false -- what's wrong?
 //: Are we initializing the dictionary correctly?
     func isAnagram(wordA: String, wordB: String) -> Bool? {
-        var countLetters : [Character : Int]
-        var lenA = wordA.characters.count
-        var lenB = wordB.characters.count
+        var countLetters = [Character : Int]()
+        let lenA = wordA.characters.count
+        let lenB = wordB.characters.count
         
         if lenA != lenB {
             return false
@@ -75,7 +75,7 @@ class Foo {
             }
         }
         
-        for (letter, count) in countLetters {
+        for (_, count) in countLetters {
             if count != 0 {
                 return false
             }
